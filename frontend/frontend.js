@@ -88,5 +88,4 @@ function start () {
   addListenerToButtons(submit, plate, police, diplomat, reset);
   ajax('GET', 'http://localhost:4000/all', null, appendTable);
 }
-
 start();
