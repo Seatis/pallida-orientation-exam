@@ -93,7 +93,6 @@ app.get('/search', function(req, res) {
 });
 
 function licenceCheck (plate) {
-  // return !(plate.includes('@') || plate.includes('#'));
   var temp = plate.replace(/[^a-zA-Z0-9-]/g, "");
   if (temp.localeCompare(plate) === 0) {
     return true;
