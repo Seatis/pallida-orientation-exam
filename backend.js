@@ -24,11 +24,6 @@ app.get('/', function(req, res) {
   res.sendFile(__dirname + '/frontend/index.html');
 });
 
-app.get('/test', function(request, response) {
-  response.json("Hello world, I am a test!");
-});
-
-
 app.get('/search/:brand', function(req, res) {
   var data = [];
   var queryString = `SELECT * FROM licence_plates WHERE car_brand='${req.params.brand}'`;
