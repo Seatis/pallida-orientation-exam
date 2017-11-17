@@ -6,7 +6,7 @@ function appendTable(result){
   if (result.result === 'wrong') {
     table.innerHTML = '';
     message.innerHTML = `Wrong licence plate format, 
-                         please do not use invalid cgaracters (@ or #)!`;
+                         please do not use invalid characters (eg. @, &, !, etc.)!`;
   } else {
     message.innerHTML = '';
     table.innerHTML = `<tr>
